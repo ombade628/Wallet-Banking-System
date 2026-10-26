@@ -1,0 +1,8 @@
+target/
+.m2-repository/
+.idea/
+.settings/
+.classpath
+.project
+*.iml
+.env

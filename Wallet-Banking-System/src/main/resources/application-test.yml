@@ -1,0 +1,7 @@
+spring:
+  jpa: { open-in-view: false }
+  flyway: { enabled: true }
+app:
+  jwt:
+    secret: test-secret-that-is-at-least-thirty-two-characters-long
+    expiration-ms: 3600000

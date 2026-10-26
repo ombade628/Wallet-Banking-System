@@ -1,0 +1,33 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+	
+	<head th:replace="~{layout :: head('Users')}"></head>
+	
+	<body>
+		<nav th:replace="~{layout :: nav}"></nav>
+		
+		<main class="container py-4">
+			<h1 class="h2">User management</h1>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Email</th>
+						<th>Full name</th>
+						<th>Role</th>
+						<th>Enabled</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr th:each="u:${users}">
+						<td th:text="${u.email}"></td>
+						<td th:text="${u.fullName}"></td>
+						<td th:text="${u.role}"></td>
+						<td th:text="${u.enabled}"></td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+		<script src="/js/app.js"></script>
+	</body>
+</html>

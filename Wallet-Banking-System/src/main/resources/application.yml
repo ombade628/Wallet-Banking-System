@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: javabank
+
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/banking}
+    username: ${SPRING_DATASOURCE_USERNAME:root}
+    password: ${SPRING_DATASOURCE_PASSWORD:ombade628}
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+
+  flyway:
+    enabled: true
+
+  thymeleaf:
+    cache: false
+
+server:
+  port: 8080
+
+app:
+  jwt:
+    secret: ${APP_JWT_SECRET:change-this-development-secret-to-a-secure-32-byte-minimum-value}
+    expiration-ms: 300000
+    cookie-secure: ${APP_COOKIE_SECURE:false}
