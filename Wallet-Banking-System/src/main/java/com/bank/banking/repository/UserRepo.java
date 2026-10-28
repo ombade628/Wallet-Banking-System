@@ -64,4 +64,11 @@ public interface UserRepo extends JpaRepository<User, UUID> {
             @Param("role") Role role,
             @Param("fullName") String fullName
     ); 
+    
+    // Add this to UserRepo.java
+    @Query("SELECT DISTINCT u FROM User u LEFT JOIN FETCH u.roles")
+    List<User> findAllWithRoles();
+
+    @Query("SELECT DISTINCT u FROM User u LEFT JOIN FETCH u.roles WHERE u.enabled = :enabled")
+    List<User> findByEnabledWithRoles(@Param("enabled") boolean enabled);
 }

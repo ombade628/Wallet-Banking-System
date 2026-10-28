@@ -15,101 +15,117 @@ import jakarta.persistence.ManyToOne;
 @Entity
 public class LoanEmi {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 
-    @ManyToOne
-    @JoinColumn(name = "loan_id", nullable = false)
-    private Loan loan;
+	@ManyToOne
+	@JoinColumn(name = "loan_id", nullable = false)
+	private Loan loan;
 
-    private Integer installmentNumber;
+	private Integer installmentNumber;
 
-    private BigDecimal emiAmount;
+	private BigDecimal emiAmount;
 
-    private BigDecimal principalAmount;
+	private BigDecimal principalAmount;
 
-    private BigDecimal interestAmount;
+	private BigDecimal interestAmount;
 
-    private LocalDate dueDate;
+	private BigDecimal paidAmount;
 
-    private LocalDate paidDate;
+	private LocalDate dueDate;
 
-    @Enumerated(EnumType.STRING)
-    private EmiStatus status;
+	private LocalDate paidDate;
 
-    public LoanEmi() {
-    }
+	@Enumerated(EnumType.STRING)
+	private EmiStatus status;
 
-    public Long getId() {
-        return id;
-    }
+	public LoanEmi() {
+	}
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+	public void markPaid(LocalDate on) {
+		this.status = EmiStatus.PAID;
+		this.paidDate = on;
+		this.paidAmount = this.emiAmount;
+	}
 
-    public Loan getLoan() {
-        return loan;
-    }
+	public Long getId() {
+		return id;
+	}
 
-    public void setLoan(Loan loan) {
-        this.loan = loan;
-    }
+	public void setId(Long id) {
+		this.id = id;
+	}
 
-    public Integer getInstallmentNumber() {
-        return installmentNumber;
-    }
+	public Loan getLoan() {
+		return loan;
+	}
 
-    public void setInstallmentNumber(Integer installmentNumber) {
-        this.installmentNumber = installmentNumber;
-    }
+	public void setLoan(Loan loan) {
+		this.loan = loan;
+	}
 
-    public BigDecimal getEmiAmount() {
-        return emiAmount;
-    }
+	public Integer getInstallmentNumber() {
+		return installmentNumber;
+	}
 
-    public void setEmiAmount(BigDecimal emiAmount) {
-        this.emiAmount = emiAmount;
-    }
+	public void setInstallmentNumber(Integer installmentNumber) {
+		this.installmentNumber = installmentNumber;
+	}
 
-    public BigDecimal getPrincipalAmount() {
-        return principalAmount;
-    }
+	public BigDecimal getEmiAmount() {
+		return emiAmount;
+	}
 
-    public void setPrincipalAmount(BigDecimal principalAmount) {
-        this.principalAmount = principalAmount;
-    }
+	public void setEmiAmount(BigDecimal emiAmount) {
+		this.emiAmount = emiAmount;
+	}
 
-    public BigDecimal getInterestAmount() {
-        return interestAmount;
-    }
+	public BigDecimal getPrincipalAmount() {
+		return principalAmount;
+	}
 
-    public void setInterestAmount(BigDecimal interestAmount) {
-        this.interestAmount = interestAmount;
-    }
+	public void setPrincipalAmount(BigDecimal principalAmount) {
+		this.principalAmount = principalAmount;
+	}
 
-    public LocalDate getDueDate() {
-        return dueDate;
-    }
+	public BigDecimal getInterestAmount() {
+		return interestAmount;
+	}
 
-    public void setDueDate(LocalDate dueDate) {
-        this.dueDate = dueDate;
-    }
+	public void setInterestAmount(BigDecimal interestAmount) {
+		this.interestAmount = interestAmount;
+	}
 
-    public LocalDate getPaidDate() {
-        return paidDate;
-    }
+	public BigDecimal getPaidAmount() {
+		return paidAmount;
+	}
 
-    public void setPaidDate(LocalDate paidDate) {
-        this.paidDate = paidDate;
-    }
+	public void setPaidAmount(BigDecimal paidAmount) {
+		this.paidAmount = paidAmount;
+	}
 
-    public EmiStatus getStatus() {
-        return status;
-    }
+	public LocalDate getDueDate() {
+		return dueDate;
+	}
 
-    public void setStatus(EmiStatus status) {
-        this.status = status;
-    }
+	public void setDueDate(LocalDate dueDate) {
+		this.dueDate = dueDate;
+	}
+
+	public LocalDate getPaidDate() {
+		return paidDate;
+	}
+
+	public void setPaidDate(LocalDate paidDate) {
+		this.paidDate = paidDate;
+	}
+
+	public EmiStatus getStatus() {
+		return status;
+	}
+
+	public void setStatus(EmiStatus status) {
+		this.status = status;
+	}
 }

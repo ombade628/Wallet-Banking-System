@@ -45,14 +45,18 @@ public class Loan {
 	private LocalDate moratoriumStartDate;
 	private LocalDate moratoriumEndDate;
 	
+	@OneToMany(mappedBy = "loan", cascade = jakarta
+			.persistence
+			.CascadeType
+			.ALL,
+	           orphanRemoval = true)
+	private List<LoanEmi> emis = new ArrayList<>();
+	
 	
 	@ManyToOne
 	@JoinColumn(name = "customer_id")
 	private User customer;
 	
-
-    @OneToMany(mappedBy = "loan")
-    private List<LoanEmi> emis = new ArrayList<>();
 	
 //	Constructors
 	public Loan() {

@@ -1,7 +1,6 @@
 package com.bank.banking.model.dto;
 
 import com.bank.banking.model.entity.Transaction;
-
 import java.math.BigDecimal;
 import java.time.Instant;
 import java.util.UUID;
@@ -13,7 +12,8 @@ public record TransferResponse(
     UUID toAccountId,
     BigDecimal amount,
     String currency,
-    Instant createdAt
+    Instant createdAt,
+    BigDecimal newFromBalance   // NEW
 ) {
     public static TransferResponse from(Transaction t) {
         return new TransferResponse(
@@ -23,7 +23,8 @@ public record TransferResponse(
             t.getToAccount().getId(),
             t.getAmount(),
             t.getCurrency(),
-            t.getCreatedAt()
+            t.getCreatedAt(),
+            t.getFromAccount().getBalance()   // NEW: post-debit balance
         );
     }
 }

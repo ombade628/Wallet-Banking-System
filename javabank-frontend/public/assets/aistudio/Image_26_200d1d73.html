@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaBank - Page Not Found (404)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              navy: '#0A3D62',
+              navyHover: '#082f4d',
+              accent: '#1e3799',
+            },
+            surface: {
+              bg: '#F5F7FA',
+              card: '#FFFFFF',
+              border: '#E2E8F0',
+              subtle: '#EDF2F7',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F5F7FA;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-[#F5F7FA] text-slate-800 flex flex-col justify-between antialiased selection:bg-[#0A3D62] selection:text-white">
+
+  <!-- Top Minimal Header / Brand Bar -->
+  <header class="w-full px-6 py-6 sm:px-12 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <!-- JavaBank Logo Mark -->
+      <div class="w-10 h-10 rounded-lg bg-[#0A3D62] text-white flex items-center justify-center shadow-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 21h18"/>
+          <path d="M3 10h18"/>
+          <path d="M5 10v11"/>
+          <path d="M19 10v11"/>
+          <path d="M9 10v11"/>
+          <path d="M15 10v11"/>
+          <path d="M12 2L2 7h20L12 2z"/>
+        </svg>
+      </div>
+      <div class="flex flex-col">
+        <span class="text-lg font-bold tracking-tight text-slate-900 leading-none">JavaBank</span>
+        <span class="text-[10px] tracking-wider uppercase font-semibold text-slate-500 mt-0.5">Corporate Banking</span>
+      </div>
+    </div>
+
+    <!-- System Status Indicator -->
+    <div class="flex items-center gap-2 text-xs font-medium text-slate-500 bg-white border border-slate-200/80 px-3 py-1.5 rounded-full shadow-[0_1px_2px_rgba(0,0,0,0.03)]">
+      <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+      <span>Core Banking Node: Operational</span>
+    </div>
+  </header>
+
+  <!-- Main Center Content Area -->
+  <main class="flex-1 flex items-center justify-center px-4 sm:px-6 py-12">
+    <div class="w-full max-w-lg bg-white rounded-xl border border-slate-200/90 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] p-8 sm:p-12 text-center">
+      
+      <!-- Big Muted 404 Display -->
+      <div class="relative inline-block mb-3">
+        <span class="font-mono text-7xl sm:text-8xl font-extrabold tracking-tighter text-slate-200 select-none">
+          404
+        </span>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-12 h-12 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-[#0A3D62] shadow-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Heading -->
+      <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 mb-2.5">
+        Page not found
+      </h1>
+
+      <!-- Subtext (one short sentence) -->
+      <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-sm mx-auto mb-8">
+        The requested institutional ledger record or banking route does not exist or has been relocated.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
+        <!-- Primary Button "Back to dashboard" -->
+        <a href="#/dashboard" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-lg bg-[#0A3D62] hover:bg-[#082f4d] active:bg-[#06243b] text-white text-sm font-semibold tracking-wide transition shadow-sm focus:outline-none focus:ring-2 focus:ring-[#0A3D62] focus:ring-offset-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+          <span>Back to dashboard</span>
+        </a>
+
+        <!-- Secondary Button / Quick Nav -->
+        <a href="#/transactions" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-slate-100 hover:bg-slate-200/80 active:bg-slate-300/80 text-slate-700 text-sm font-medium transition focus:outline-none">
+          <span>View transactions</span>
+        </a>
+      </div>
+
+      <!-- Secondary text link "Contact support" -->
+      <div class="pt-2 border-t border-slate-100">
+        <a href="#/support" class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium text-slate-500 hover:text-[#0A3D62] transition-colors group">
+          <span>Need institutional assistance?</span>
+          <span class="text-[#0A3D62] underline underline-offset-4 group-hover:text-[#082f4d] font-semibold">Contact support</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 text-[#0A3D62] transition-transform group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14"/>
+            <path d="m12 5 7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Diagnostic Session Identifier for Enterprise Banking -->
+      <div class="mt-6 pt-4 border-t border-slate-100 text-left bg-slate-50/80 rounded-lg p-3">
+        <div class="flex items-center justify-between text-[11px] text-slate-500 font-mono">
+          <span>STATUS: HTTP_404_NOT_FOUND</span>
+          <span>TRACE: JB-ERR-7829a4</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Clean Corporate Footer -->
+  <footer class="w-full py-6 px-6 sm:px-12 text-center text-xs text-slate-400">
+    <p>© 2026 JavaBank Financial Services Ltd. Regulated by Reserve Bank of India (RBI).</p>
+  </footer>
+
+</body>
+</html>

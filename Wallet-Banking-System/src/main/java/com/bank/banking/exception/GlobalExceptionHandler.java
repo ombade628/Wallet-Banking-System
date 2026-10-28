@@ -56,4 +56,22 @@ public class GlobalExceptionHandler {
             "message", message
         ));
     }
+    @ExceptionHandler(org.springframework.security.authentication.BadCredentialsException.class)
+    public ResponseEntity<?> badCredentials(
+            org.springframework.security.authentication.BadCredentialsException e) {
+        return build(HttpStatus.UNAUTHORIZED, "Invalid email or password");
+    }
+
+    @ExceptionHandler(org.springframework.security.access.AccessDeniedException.class)
+    public ResponseEntity<?> accessDenied(
+            org.springframework.security.access.AccessDeniedException e) {
+        return build(HttpStatus.FORBIDDEN,
+                e.getMessage() == null ? "Access denied" : e.getMessage());
+    }
+
+    @ExceptionHandler(SecurityException.class)
+    public ResponseEntity<?> securityException(SecurityException e) {
+        return build(HttpStatus.FORBIDDEN,
+                e.getMessage() == null ? "Forbidden" : e.getMessage());
+    }
 }

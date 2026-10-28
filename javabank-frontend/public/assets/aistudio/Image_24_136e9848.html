@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-surface-variant":"#42474e","secondary":"#005cab","outline-variant":"#c2c7cf","tertiary-container":"#00451a","on-tertiary-fixed":"#002109","on-tertiary":"#ffffff","on-error-container":"#93000a","surface-container":"#e7eefe","on-secondary-container":"#fefcff","error-container":"#ffdad6","on-primary":"#ffffff","tertiary":"#002c0e","on-secondary":"#ffffff","outline":"#72777f","surface-bright":"#f9f9ff","tertiary-fixed":"#7ffc97","primary-container":"#0a3d62","on-primary-container":"#80a8d3","on-tertiary-fixed-variant":"#005320","primary":"#002743","on-secondary-fixed-variant":"#004786","on-surface":"#151c27","on-error":"#ffffff","surface-dim":"#d3daea","on-tertiary-container":"#3bbc5f","tertiary-fixed-dim":"#62df7d","on-secondary-fixed":"#001c3a","surface":"#f9f9ff","surface-container-lowest":"#ffffff","surface-container-high":"#e2e8f8","on-primary-fixed-variant":"#1d496f","primary-fixed":"#cfe5ff","secondary-fixed-dim":"#a5c8ff","surface-variant":"#dce2f3","inverse-primary":"#a2caf7","inverse-on-surface":"#ebf1ff","background":"#f9f9ff","secondary-fixed":"#d4e3ff","surface-container-highest":"#dce2f3","secondary-container":"#0075d6","surface-container-low":"#f0f3ff","on-primary-fixed":"#001d34","on-background":"#151c27","primary-fixed-dim":"#a2caf7","surface-tint":"#386188","inverse-surface":"#2a313d","error":"#ba1a1a"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","space-2xl":"3rem","space-lg":"1.5rem","space-xl":"2rem","gutter-mobile":"1rem","space-sm":"0.5rem","margin":"2rem","margin-mobile":"1rem","gutter":"1.5rem","space-xs":"0.25rem"},"fontFamily":{"title-md":["Inter"],"headline-lg":["Inter"],"data-mono":["Inter"],"headline-xl-mobile":["Inter"],"body-md":["Inter"],"body-sm":["Inter"],"label-md":["Inter"],"headline-sm":["Inter"],"label-sm":["Inter"],"body-lg":["Inter"],"headline-xl":["Inter"]},"fontSize":{"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"data-mono":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-xl-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"label-md":["14px",{"lineHeight":"20px","fontWeight":"500"}],"headline-sm":["18px",{"lineHeight":"26px","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-60 bg-surface-container-lowest z-50 flex flex-col justify-between border-r border-outline-variant/30 shadow-[0_2px_8px_rgba(0,0,0,0.06)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-outline-variant/30"><div class="w-8 h-8 rounded bg-primary flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[20px]">account_balance</span></div><div class="flex flex-col"><span class="font-title-md text-title-md text-primary tracking-tight leading-none">JavaBank</span><span class="font-label-sm text-label-sm text-secondary tracking-wider font-semibold uppercase mt-0.5">Corporate</span></div></div><div class="px-space-md py-space-sm"><span class="font-label-sm text-label-sm text-outline tracking-wider uppercase px-space-sm">Core Banking</span></div><nav class="flex flex-col gap-1 px-space-sm" data-active-classes="bg-primary text-on-primary font-label-md"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="accounts" href="#"><span class="material-symbols-outlined text-[20px]">account_balance_wallet</span><span>Accounts</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="transfer" href="#"><span class="material-symbols-outlined text-[20px]">sync_alt</span><span>Transfer</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="transactions" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Transactions</span></a><div class="px-space-md pt-space-sm pb-space-xs"><span class="font-label-sm text-label-sm text-outline tracking-wider uppercase px-space-sm">Governance</span></div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="loan-approvals" href="#"><span class="material-symbols-outlined text-[20px]">fact_check</span><span>Loan Approvals</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded transition-colors bg-primary text-on-primary font-label-md" data-path="staff-management" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span>Staff</span></a></nav></div><div class="p-space-md border-t border-outline-variant/30"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded text-error hover:bg-error-container hover:text-on-error-container transition-colors font-label-md text-label-md" data-path="logout" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span>Sign Out</span></a></div></aside><div class="pl-60"><header class="fixed top-0 left-60 right-0 h-16 bg-surface-container-lowest border-b border-outline-variant/30 shadow-[0_2px_8px_rgba(0,0,0,0.06)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-sm font-body-sm text-body-sm text-outline"><span class="hover:text-on-surface cursor-pointer">Manager Portal</span><span class="material-symbols-outlined text-[16px]">chevron_right</span><span class="hover:text-on-surface cursor-pointer">Governance</span><span class="material-symbols-outlined text-[16px]">chevron_right</span><span class="font-label-sm text-label-sm text-primary font-semibold">Staff Management</span></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs px-2.5 py-1 rounded bg-surface-container text-secondary text-label-sm font-label-sm font-medium"><span class="w-2 h-2 rounded-full bg-tertiary-fixed-variant animate-pulse"></span><span>Core Banking API · Live</span></div><button class="relative p-space-xs text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-0.5 right-0.5 w-2 h-2 rounded-full bg-error"></span></button><div class="h-6 w-px bg-outline-variant/40"></div><div class="flex items-center gap-space-md"><div class="flex flex-col text-right leading-tight"><div class="flex items-center justify-end gap-1.5"><span class="font-label-md text-label-md text-primary font-semibold">Vikram Malhotra</span><span class="px-1.5 py-0.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-bold text-[10px] tracking-wide">MANAGER</span></div><span class="font-body-sm text-body-sm text-outline">Branch Admin #4082</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-background min-h-screen px-space-xl py-space-xl"><div class="flex flex-col w-full">
+<!-- Page Header & Action Bar -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg mb-space-xl">
+<div class="flex flex-col max-w-2xl">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-semibold">Institutional Governance</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm text-outline">Branch #4082</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight">Staff Management</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Directory and access control governance for branch managers, cashiers, and administrative officers.</p>
+</div>
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<button class="h-10 px-space-md rounded bg-primary text-on-primary hover:bg-primary-container transition-colors shadow-sm flex items-center gap-space-xs font-label-md text-label-md" id="open-create-modal" onclick="document.getElementById('createStaffModal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>Create staff account</span>
+</button>
+</div>
+</div>
+<!-- Summary Metric Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg mb-space-xl">
+<!-- Managers Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-medium">Managers</span>
+<div class="flex items-baseline gap-space-xs mt-2">
+<span class="font-headline-lg text-headline-lg text-primary">1</span>
+<span class="font-label-sm text-label-sm text-tertiary-container font-semibold">Active</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">admin_panel_settings</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">1 Branch Underwriter</span>
+<span class="font-data-mono text-body-sm text-secondary">Level 4 Tier</span>
+</div>
+</div>
+<!-- Cashiers Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-medium">Cashiers</span>
+<div class="flex items-baseline gap-space-xs mt-2">
+<span class="font-headline-lg text-headline-lg text-primary">1</span>
+<span class="font-label-sm text-label-sm text-tertiary-container font-semibold">Active</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">point_of_sale</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">1 Front-Office Teller</span>
+<span class="font-data-mono text-body-sm text-secondary">Counter 03</span>
+</div>
+</div>
+<!-- Disabled Accounts Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-medium">Disabled Accounts</span>
+<div class="flex items-baseline gap-space-xs mt-2">
+<span class="font-headline-lg text-headline-lg text-primary">0</span>
+<span class="font-label-sm text-label-sm text-outline font-semibold">Inactive</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary-container">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">All credentials healthy</span>
+<span class="font-data-mono text-body-sm text-tertiary-container font-medium">100% Compliant</span>
+</div>
+</div>
+</div>
+<!-- Staff Directory Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm flex flex-col mb-space-xl overflow-hidden">
+<!-- Directory Header & Controls -->
+<div class="p-space-lg flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-primary">Staff Directory</h2>
+<span class="font-body-sm text-body-sm text-outline">Manage active authentication access and branch responsibilities</span>
+</div>
+<!-- Filters & Search Toolbar -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="relative w-full sm:w-64">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[18px]">search</span>
+<input class="w-full h-10 pl-9 pr-space-sm bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded focus:bg-surface-container-lowest focus:outline-none transition-colors" id="staffSearchInput" placeholder="Search by name or email..." type="text"/>
+</div>
+<div class="flex items-center gap-space-xs">
+<select class="h-10 px-space-sm bg-surface-container-low text-on-surface font-label-md text-label-md rounded focus:outline-none cursor-pointer" id="roleFilterSelect">
+<option value="all">All Roles</option>
+<option value="MANAGER">Managers</option>
+<option value="CASHIER">Cashiers</option>
+</select>
+<select class="h-10 px-space-sm bg-surface-container-low text-on-surface font-label-md text-label-md rounded focus:outline-none cursor-pointer" id="statusFilterSelect">
+<option value="all">All Status</option>
+<option value="Enabled">Enabled</option>
+<option value="Disabled">Disabled</option>
+</select>
+<button class="h-10 px-2.5 rounded bg-surface-container text-outline hover:text-primary transition-colors flex items-center justify-center" id="toggleEmptyStateBtn" onclick="toggleEmptyState()" title="Toggle Empty State View (Demo)">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Table Container -->
+<div class="w-full overflow-x-auto" id="tableContainer">
+<table class="w-full text-left font-body-md text-body-md">
+<thead>
+<tr class="bg-surface-container-high text-outline font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-space-lg font-semibold">Staff Member</th>
+<th class="py-3 px-space-md font-semibold">Email Address</th>
+<th class="py-3 px-space-md font-semibold">Role Tier</th>
+<th class="py-3 px-space-md font-semibold">Status</th>
+<th class="py-3 px-space-md font-semibold">Provisioned</th>
+<th class="py-3 px-space-lg font-semibold text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0" id="staffTableBody">
+<!-- Row 1: Omkar Bade -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-space-md px-space-lg whitespace-nowrap">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-md text-label-md font-bold tracking-tight">OB</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-semibold leading-none">Omkar Bade</span>
+<span class="font-body-sm text-body-sm text-outline mt-1">ID: STF-4082-01</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="font-data-mono text-data-mono text-on-surface">omkar@javabank.com</span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold tracking-wide">
+<span class="material-symbols-outlined text-[13px]">shield_person</span>
+                MANAGER
+              </span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container text-tertiary-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-variant"></span>
+                Enabled
+              </span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="font-body-sm text-body-sm text-on-surface-variant">12 Sep 2026</span>
+</td>
+<td class="py-space-md px-space-lg whitespace-nowrap text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="h-8 px-2.5 rounded bg-surface-container text-secondary hover:bg-secondary hover:text-on-secondary font-label-sm text-label-sm transition-colors flex items-center gap-1" onclick="openChangeRoleModal('Omkar Bade', 'omkar@javabank.com', 'MANAGER')">
+<span class="material-symbols-outlined text-[14px]">swap_horiz</span>
+<span>Change role</span>
+</button>
+<button class="h-8 px-2.5 rounded bg-surface-container-high text-error hover:bg-error-container hover:text-on-error-container font-label-sm text-label-sm transition-colors flex items-center gap-1" onclick="toggleUserStatus(this)">
+<span class="material-symbols-outlined text-[14px]">block</span>
+<span class="status-btn-text">Disable</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Priya Shah -->
+<tr class="hover:bg-surface-container-low transition-colors group bg-surface-container-low/40">
+<td class="py-space-md px-space-lg whitespace-nowrap">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-md text-label-md font-bold tracking-tight">PS</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-semibold leading-none">Priya Shah</span>
+<span class="font-body-sm text-body-sm text-outline mt-1">ID: STF-4082-04</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="font-data-mono text-data-mono text-on-surface">priya@javabank.com</span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold tracking-wide">
+<span class="material-symbols-outlined text-[13px]">payments</span>
+                CASHIER
+              </span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container text-tertiary-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-variant"></span>
+                Enabled
+              </span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="font-body-sm text-body-sm text-on-surface-variant">04 Oct 2026</span>
+</td>
+<td class="py-space-md px-space-lg whitespace-nowrap text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="h-8 px-2.5 rounded bg-surface-container text-secondary hover:bg-secondary hover:text-on-secondary font-label-sm text-label-sm transition-colors flex items-center gap-1" onclick="openChangeRoleModal('Priya Shah', 'priya@javabank.com', 'CASHIER')">
+<span class="material-symbols-outlined text-[14px]">swap_horiz</span>
+<span>Change role</span>
+</button>
+<button class="h-8 px-2.5 rounded bg-surface-container-high text-error hover:bg-error-container hover:text-on-error-container font-label-sm text-label-sm transition-colors flex items-center gap-1" onclick="toggleUserStatus(this)">
+<span class="material-symbols-outlined text-[14px]">block</span>
+<span class="status-btn-text">Disable</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Empty State Container (Hidden by default, switchable via demo icon) -->
+<div class="hidden flex-col items-center justify-center p-space-2xl text-center" id="emptyStateContainer">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-outline mb-space-md">
+<span class="material-symbols-outlined text-[32px]">group_off</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">No staff accounts found</h3>
+<p class="font-body-md text-body-md text-outline max-w-sm mt-1 mb-space-lg">There are currently no staff accounts matching your query or filter criteria in this branch.</p>
+<button class="h-10 px-space-md rounded bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm flex items-center gap-space-xs" onclick="document.getElementById('createStaffModal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>Create the first one</span>
+</button>
+</div>
+<!-- Table Footer / Pagination Metadata -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="tableSummaryText">Showing <span class="font-semibold text-primary">2</span> of <span class="font-semibold text-primary">2</span> staff accounts</span>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-outline mr-2">Page 1 of 1</span>
+<button class="w-8 h-8 rounded bg-surface-container text-outline opacity-50 flex items-center justify-center cursor-not-allowed" disabled="">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded bg-surface-container text-outline opacity-50 flex items-center justify-center cursor-not-allowed" disabled="">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Role Matrix Compliance Guide Box -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg mb-space-xl">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">policy</span>
+<h3 class="font-title-md text-title-md text-primary font-semibold">Role Authority & Entitlements</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Security framework governing credential boundaries under RBI digital lending mandates.</p>
+<div class="space-y-space-sm">
+<div class="p-space-sm rounded bg-surface-container-low flex items-start gap-space-sm">
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm font-bold text-[10px] mt-0.5">MANAGER</span>
+<span class="font-body-sm text-body-sm text-on-surface">Loan underwriting approval, credit facility override, staff onboarding, cash drawer reconciliation audit.</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low flex items-start gap-space-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-bold text-[10px] mt-0.5">CASHIER</span>
+<span class="font-body-sm text-body-sm text-on-surface">Over-the-counter deposit posting, wire dispatch under ₹50,000 threshold, check clearance submission.</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-body-sm font-body-sm text-outline">
+<span>Policy Code: SEC-AUTH-882</span>
+<span class="text-secondary font-medium">Compliance Checked</span>
+</div>
+</div>
+<!-- Active Audit Trail Snapshot -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary-container text-[20px]">history</span>
+<h3 class="font-title-md text-title-md text-primary font-semibold">Governance Activity Log</h3>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Recent 24h</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Real-time immutable ledger tracking user role shifts and provisioning actions.</p>
+<div class="space-y-2">
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Priya Shah credential generated by Vikram M.</span>
+</div>
+<span class="font-data-mono text-body-sm text-outline">Today, 09:14</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Branch token rotation executed automatically</span>
+</div>
+<span class="font-data-mono text-body-sm text-outline">Yesterday, 23:59</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-outline">Central Audit Server: Synced</span>
+<span class="text-primary font-medium cursor-pointer hover:underline">Download Audit PDF</span>
+</div>
+</div>
+</div>
+<!-- MODAL 1: Create Staff Account Modal Dialog -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-space-md bg-primary-container/40" id="createStaffModal">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl w-full max-w-lg overflow-hidden animate-in fade-in zoom-in-95">
+<!-- Modal Header -->
+<div class="px-space-xl py-space-lg bg-surface-container-lowest flex items-start justify-between">
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Create staff account</h3>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">Provision new credential for authorized branch personnel.</p>
+</div>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container text-outline hover:text-on-surface flex items-center justify-center transition-colors" onclick="document.getElementById('createStaffModal').classList.add('hidden')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Governance Notification Banner -->
+<div class="mx-space-xl p-space-md rounded bg-surface-container flex items-start gap-space-sm text-secondary">
+<span class="material-symbols-outlined text-[20px] flex-shrink-0 mt-0.5">info</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-primary">Role Governance Active</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">You are logged in as <strong class="text-primary">MANAGER</strong>. In compliance with separation of duties, you can create <strong class="text-primary">CASHIER</strong> accounts directly.</span>
+</div>
+</div>
+<!-- Form Inputs -->
+<form class="px-space-xl py-space-lg flex flex-col gap-space-md" onsubmit="handleCreateStaff(event)">
+<!-- Full Name -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-semibold text-primary">Full Name <span class="text-error">*</span></label>
+<div class="relative">
+<input class="w-full h-11 px-space-md rounded bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none transition-colors" placeholder="e.g. Arun Verma" required="" type="text"/>
+</div>
+</div>
+<!-- Email Address -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-semibold text-primary">Email Address <span class="text-error">*</span></label>
+<div class="relative">
+<input class="w-full h-11 px-space-md rounded bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none transition-colors" placeholder="e.g. arun.v@javabank.com" required="" type="email"/>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Must end in institutional domain @javabank.com</span>
+</div>
+<!-- Password -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-semibold text-primary">Temporary Password <span class="text-error">*</span></label>
+<div class="relative">
+<input class="w-full h-11 px-space-md rounded bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none transition-colors" placeholder="••••••••••••" required="" type="password"/>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Minimum 8 characters with at least one number and uppercase symbol</span>
+</div>
+<!-- Role Selector -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm font-semibold text-primary">Role Assignment <span class="text-error">*</span></label>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Standard Cashier Access</span>
+</div>
+<select class="w-full h-11 px-space-md rounded bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none cursor-pointer">
+<option selected="" value="CASHIER">CASHIER (Front-Office Processing)</option>
+<option disabled="" value="MANAGER">MANAGER (Requires Bank Board Approval)</option>
+</select>
+<span class="font-body-sm text-body-sm text-outline">Role permissions restricted by Manager operational policy.</span>
+</div>
+<!-- Modal Footer Actions -->
+<div class="pt-space-md flex items-center justify-end gap-space-sm">
+<button class="h-10 px-space-md rounded bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" onclick="document.getElementById('createStaffModal').classList.add('hidden')" type="button">
+            Cancel
+          </button>
+<button class="h-10 px-space-md rounded bg-primary text-on-primary hover:bg-primary-container transition-colors shadow-sm flex items-center gap-space-xs font-label-md text-label-md" type="submit">
+<span class="material-symbols-outlined text-[18px]">how_to_reg</span>
+<span>Create staff account</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- MODAL 2: Change Staff Role Modal Dialog -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-space-md bg-primary-container/40" id="changeRoleModal">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl w-full max-w-md overflow-hidden animate-in fade-in zoom-in-95">
+<!-- Modal Header -->
+<div class="px-space-xl py-space-lg flex items-start justify-between">
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Change staff role</h3>
+<p class="font-body-sm text-body-sm text-outline mt-0.5" id="changeRoleTargetName">Modifying permissions for Priya Shah</p>
+</div>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container text-outline hover:text-on-surface flex items-center justify-center transition-colors" onclick="document.getElementById('changeRoleModal').classList.add('hidden')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="px-space-xl pb-space-lg flex flex-col gap-space-md" onsubmit="handleUpdateRole(event)">
+<!-- Current Role Status Badge -->
+<div class="p-space-md rounded bg-surface-container-low flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-outline">Current Active Role</span>
+<span class="font-title-md text-title-md text-primary font-semibold mt-0.5" id="currentRoleBadge">CASHIER</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+</div>
+<!-- Select New Role -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-semibold text-primary">Select New Role Tier</label>
+<select class="w-full h-11 px-space-md rounded bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none cursor-pointer" id="newRoleSelect">
+<option value="CASHIER">CASHIER — Standard Desk Operations</option>
+<option value="MANAGER">MANAGER — Requires Bank Dual-Key Approval</option>
+</select>
+</div>
+<div class="p-space-sm rounded bg-surface-container text-secondary flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[18px] flex-shrink-0">lock</span>
+<span class="font-body-sm text-body-sm">Elevation to MANAGER triggers an automated cryptographic prompt sent to Vikram Malhotra's registered hardware authenticator.</span>
+</div>
+<!-- Actions -->
+<div class="pt-space-sm flex items-center justify-end gap-space-sm">
+<button class="h-10 px-space-md rounded bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" onclick="document.getElementById('changeRoleModal').classList.add('hidden')" type="button">
+            Cancel
+          </button>
+<button class="h-10 px-space-md rounded bg-primary text-on-primary hover:bg-primary-container transition-colors shadow-sm font-label-md text-label-md" type="submit">
+            Update role
+          </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script>
+  function toggleEmptyState() {
+    const table = document.getElementById('tableContainer');
+    const empty = document.getElementById('emptyStateContainer');
+    const summary = document.getElementById('tableSummaryText');
+    if (table.classList.contains('hidden')) {
+      table.classList.remove('hidden');
+      empty.classList.add('hidden');
+      summary.innerHTML = 'Showing <span class="font-semibold text-primary">2</span> of <span class="font-semibold text-primary">2</span> staff accounts';
+    } else {
+      table.classList.add('hidden');
+      empty.classList.remove('hidden');
+      summary.innerHTML = 'Showing <span class="font-semibold text-primary">0</span> of <span class="font-semibold text-primary">0</span> staff accounts';
+    }
+  }
+
+  function toggleUserStatus(button) {
+    const textSpan = button.querySelector('.status-btn-text');
+    const isCurrentlyDisabled = textSpan.innerText === 'Enable';
+    const row = button.closest('tr');
+    const statusCellBadge = row.querySelector('td:nth-child(4) span');
+
+    if (isCurrentlyDisabled) {
+      textSpan.innerText = 'Disable';
+      button.classList.remove('bg-surface-container', 'text-tertiary-container');
+      button.classList.add('bg-surface-container-high', 'text-error');
+      statusCellBadge.className = 'inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container text-tertiary-container font-label-sm text-label-sm font-semibold';
+      statusCellBadge.innerHTML = '<span class="w-2 h-2 rounded-full bg-tertiary-fixed-variant"></span> Enabled';
+    } else {
+      textSpan.innerText = 'Enable';
+      button.classList.remove('bg-surface-container-high', 'text-error');
+      button.classList.add('bg-surface-container', 'text-tertiary-container');
+      statusCellBadge.className = 'inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-high text-outline font-label-sm text-label-sm font-semibold';
+      statusCellBadge.innerHTML = '<span class="w-2 h-2 rounded-full bg-outline"></span> Disabled';
+    }
+  }
+
+  function openChangeRoleModal(name, email, currentRole) {
+    document.getElementById('changeRoleTargetName').innerText = 'Modifying permissions for ' + name + ' (' + email + ')';
+    document.getElementById('currentRoleBadge').innerText = currentRole;
+    document.getElementById('newRoleSelect').value = currentRole;
+    document.getElementById('changeRoleModal').classList.remove('hidden');
+  }
+
+  function handleCreateStaff(e) {
+    e.preventDefault();
+    document.getElementById('createStaffModal').classList.add('hidden');
+  }
+
+  function handleUpdateRole(e) {
+    e.preventDefault();
+    document.getElementById('changeRoleModal').classList.add('hidden');
+  }
+</script></main></div></body></html>

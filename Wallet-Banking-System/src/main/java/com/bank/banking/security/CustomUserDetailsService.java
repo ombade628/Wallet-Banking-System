@@ -5,16 +5,11 @@ import com.bank.banking.repository.UserRepo;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.*;
 import org.springframework.stereotype.Service;
-//import com.bank.banking.model.entity.UserRole;/
-
 @Service
 public class CustomUserDetailsService implements UserDetailsService {
 	private final UserRepo users;
-//	private final UserRole role ; 
-
 	public CustomUserDetailsService(UserRepo users) {
-		this.users = users;
-//		this.role = role ; 
+		this.users = users; 
 	}
 
 	@Override

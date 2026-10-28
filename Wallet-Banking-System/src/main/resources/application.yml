@@ -1,24 +1,19 @@
 spring:
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
   application:
     name: javabank
-
   datasource:
     url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/banking}
     username: ${SPRING_DATASOURCE_USERNAME:root}
-    password: ${SPRING_DATASOURCE_PASSWORD:ombade628}
-
+    password: ${SPRING_DATASOURCE_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: validate
     open-in-view: false
     properties:
-      hibernate:
-        jdbc:
-          time_zone: UTC
-
-  flyway:
-    enabled: true
-
+      hibernate.jdbc.time_zone: UTC
   thymeleaf:
     cache: false
 
@@ -27,6 +22,15 @@ server:
 
 app:
   jwt:
-    secret: ${APP_JWT_SECRET:change-this-development-secret-to-a-secure-32-byte-minimum-value}
-    expiration-ms: 300000
+    secret: ${APP_JWT_SECRET:dev-only-secret-that-is-at-least-thirty-two-characters-long}
+    expiration-ms: 1800000
     cookie-secure: ${APP_COOKIE_SECURE:false}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: never

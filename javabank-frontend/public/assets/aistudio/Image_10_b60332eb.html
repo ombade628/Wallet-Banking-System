@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed-dim": "#62df7d", "surface-container-highest": "#dce2f3", "secondary-fixed": "#d4e3ff", "on-error": "#ffffff", "error": "#ba1a1a", "on-tertiary-fixed-variant": "#005320", "surface-dim": "#d3daea", "surface-container": "#e7eefe", "on-secondary-container": "#fefcff", "tertiary-fixed": "#7ffc97", "tertiary-container": "#00451a", "on-secondary-fixed-variant": "#004786", "surface-bright": "#f9f9ff", "on-primary": "#ffffff", "primary-fixed-dim": "#a2caf7", "tertiary": "#002c0e", "primary-container": "#0a3d62", "surface-variant": "#dce2f3", "secondary-fixed-dim": "#a5c8ff", "surface-tint": "#386188", "on-surface-variant": "#42474e", "inverse-on-surface": "#ebf1ff", "primary": "#002743", "on-secondary": "#ffffff", "outline": "#72777f", "inverse-surface": "#2a313d", "primary-fixed": "#cfe5ff", "on-primary-fixed-variant": "#1d496f", "on-surface": "#151c27", "secondary": "#005cab", "error-container": "#ffdad6", "secondary-container": "#0075d6", "on-primary-container": "#80a8d3", "surface-container-lowest": "#ffffff", "on-error-container": "#93000a", "inverse-primary": "#a2caf7", "on-primary-fixed": "#001d34", "on-secondary-fixed": "#001c3a", "surface-container-high": "#e2e8f8", "surface-container-low": "#f0f3ff", "outline-variant": "#c2c7cf", "on-tertiary-container": "#3bbc5f", "surface": "#f9f9ff", "on-tertiary-fixed": "#002109", "on-tertiary": "#ffffff", "background": "#f9f9ff", "on-background": "#151c27" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "space-md": "1rem", "space-xl": "2rem", "gutter-mobile": "1rem", "space-lg": "1.5rem", "margin-mobile": "1rem", "space-2xl": "3rem", "gutter": "1.5rem", "margin": "2rem", "space-xs": "0.25rem" }, "fontFamily": { "body-sm": ["Inter"], "title-md": ["Inter"], "label-md": ["Inter"], "headline-xl": ["Inter"], "headline-sm": ["Inter"], "headline-xl-mobile": ["Inter"], "data-mono": ["Inter"], "headline-lg": ["Inter"], "label-sm": ["Inter"], "body-lg": ["Inter"], "body-md": ["Inter"] }, "fontSize": { "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "headline-xl-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "data-mono": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface-container-low font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[240px] bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-space-md"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[22px]">account_balance</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">JavaBank</span><span class="font-label-sm text-label-sm text-outline tracking-wider uppercase mt-space-xs">Corporate</span></div></div><div class="px-space-md mt-space-lg"><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-md"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="accounts" href="#"><span class="material-symbols-outlined text-[20px]">account_balance_wallet</span><span>Accounts</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="transfer" href="#"><span class="material-symbols-outlined text-[20px]">swap_horiz</span><span>Transfer</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="transactions" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Transactions</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="loans" href="#"><span class="material-symbols-outlined text-[20px]">real_estate_agent</span><span>Loans</span></a></nav></div></div><div class="px-space-md"><button class="w-full flex items-center justify-center gap-space-sm px-space-md py-space-sm rounded-lg text-error hover:bg-error-container hover:text-on-error-container transition-colors font-label-md text-label-md" type="button"><span class="material-symbols-outlined text-[20px]">logout</span><span>Logout</span></button></div></aside><div class="pl-[240px]"><header class="fixed top-0 left-[240px] right-0 z-40 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-space-xl flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-2 h-2 rounded-full bg-tertiary-fixed-variant"></div><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Portal</span></div><div class="flex items-center gap-space-lg"><button aria-label="Notifications" class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-md"><span class="inline-flex items-center px-space-sm py-0.5 rounded font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed-variant font-medium tracking-wide uppercase">Customer</span><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface leading-tight">Rajesh Sharma</span><span class="font-label-sm text-label-sm text-outline leading-tight">ID: JB-92041</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-16 bg-surface-container-low min-h-screen"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1440px] mx-auto px-space-md lg:px-margin py-space-lg flex flex-col gap-space-lg">
+<!-- Top Action Breadcrumb & Title Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-outline">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">account_balance_wallet</span>
+<span>Accounts</span>
+</a>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface font-medium">Detail</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight">Account 1000••••3456</h1>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+            Primary Liquid
+          </span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<a class="inline-flex items-center justify-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container transition-colors font-label-md text-label-md shadow-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Back to accounts</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-xs px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-colors font-label-md text-label-md shadow-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">send_money</span>
+<span>Transfer from this account</span>
+</a>
+</div>
+</div>
+<!-- Main Account Summary Card -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col">
+<div class="flex flex-col lg:flex-row lg:items-start justify-between gap-space-lg">
+<!-- Account Identifiers & Status -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="inline-flex items-center px-2.5 py-1 rounded-md font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed-variant font-semibold tracking-wider uppercase">
+              SAVINGS
+            </span>
+<div class="flex items-center gap-1.5 bg-surface-container-low px-2.5 py-1 rounded-md">
+<span class="font-data-mono text-data-mono text-on-surface font-semibold tracking-wider">1000••••3456</span>
+<button class="text-outline hover:text-primary transition-colors flex items-center" onclick="navigator.clipboard.writeText('100088923456')" title="Copy masked account number" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed-variant font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+              ACTIVE
+            </span>
+</div>
+<div class="flex flex-col gap-0.5 mt-space-xs">
+<span class="font-title-md text-title-md text-on-surface">Standard Corporate High-Yield Savings</span>
+<p class="font-body-md text-body-md text-outline">
+              Daily interest compounding at <span class="font-medium text-on-surface">4.50% p.a.</span> · Regulatory insured by DICGC (RBI)
+            </p>
+</div>
+</div>
+<!-- Available Balance -->
+<div class="flex flex-col lg:items-end bg-surface-container-low lg:bg-transparent p-space-md lg:p-0 rounded-lg">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Available Balance</span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">₹85,000.00</span>
+</div>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">INR · Indian Rupee (Real-time settled)</span>
+</div>
+</div>
+</div>
+<!-- Separation Line via Surface Tonality -->
+<div class="h-px w-full bg-surface-container-high my-space-lg"></div>
+<!-- Financial Institutional Metadata Row -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<div class="flex flex-col gap-0.5 bg-surface-container-low p-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Opened Date</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">14 Jan 2024</span>
+</div>
+<div class="flex flex-col gap-0.5 bg-surface-container-low p-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Account ID</span>
+<div class="flex items-center justify-between">
+<span class="font-data-mono text-data-mono text-on-surface font-semibold">ACC-IN-2024-8841</span>
+<button class="text-outline hover:text-primary transition-colors" onclick="navigator.clipboard.writeText('ACC-IN-2024-8841')" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-0.5 bg-surface-container-low p-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">IFSC Code</span>
+<div class="flex items-center justify-between">
+<span class="font-data-mono text-data-mono text-on-surface font-semibold">JAVB0001042</span>
+<button class="text-outline hover:text-primary transition-colors" onclick="navigator.clipboard.writeText('JAVB0001042')" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-0.5 bg-surface-container-low p-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Branch</span>
+<span class="font-body-md text-body-md text-on-surface font-medium truncate" title="BKC Financial District, Mumbai">
+            BKC Fin District, Mumbai
+          </span>
+</div>
+</div>
+</section>
+<!-- Account Actions & Governance Sub-Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface leading-tight">Account Management &amp; Security</span>
+<span class="font-body-sm text-body-sm text-outline">Tier-1 Corporate Governance &amp; Statements</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<button class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Statement (PDF/CSV)</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-error-container/40 text-error opacity-60 cursor-not-allowed font-label-md text-label-md" disabled="" title="Contact relationship manager to freeze institutional accounts" type="button">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<span>Freeze account</span>
+</button>
+</div>
+</div>
+<!-- Visual Activity Sparkline / Performance Panel -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Monthly Outflow</span>
+<span class="material-symbols-outlined text-outline text-[18px]">trending_down</span>
+</div>
+<div class="mt-2 flex items-baseline justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">₹6,200.00</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container font-medium">-14.2% vs Sep</span>
+</div>
+<!-- Micro sparkline (SVG) -->
+<div class="w-full h-8 mt-3">
+<svg class="w-full h-full text-secondary" fill="none" preserveaspectratio="none" viewbox="0 0 100 24">
+<path d="M0 18 L20 16 L40 20 L60 9 L80 14 L100 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Monthly Inflow</span>
+<span class="material-symbols-outlined text-outline text-[18px]">trending_up</span>
+</div>
+<div class="mt-2 flex items-baseline justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">₹11,630.00</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container font-medium">+8.5% vs Sep</span>
+</div>
+<!-- Micro sparkline (SVG) -->
+<div class="w-full h-8 mt-3">
+<svg class="w-full h-full text-tertiary-container" fill="none" preserveaspectratio="none" viewbox="0 0 100 24">
+<path d="M0 20 L25 15 L50 18 L75 8 L100 4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Accrued Interest Q4</span>
+<span class="material-symbols-outlined text-outline text-[18px]">savings</span>
+</div>
+<div class="mt-2 flex items-baseline justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">₹1,630.00</span>
+<span class="font-label-sm text-label-sm text-outline font-medium">Yield: 4.5%</span>
+</div>
+<!-- Micro visual indicator -->
+<div class="w-full bg-surface-container-high h-2 rounded-full mt-4 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full w-[65%]"></div>
+</div>
+</div>
+</div>
+<!-- Transactions Section -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Section Header & Filter Toolbar -->
+<div class="p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md bg-surface-container-lowest">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Transactions</h2>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant font-semibold">
+            4 records
+          </span>
+</div>
+<!-- Filter Controls -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Type Filter Tabs -->
+<div class="inline-flex p-1 rounded-lg bg-surface-container-low gap-1" id="filter-tabs">
+<button class="filter-btn active px-3 py-1 rounded-md font-label-sm text-label-sm bg-surface-container-lowest text-primary font-semibold shadow-xs" type="button">All</button>
+<button class="filter-btn px-3 py-1 rounded-md font-label-sm text-label-sm text-outline hover:text-on-surface transition-colors" type="button">Credits</button>
+<button class="filter-btn px-3 py-1 rounded-md font-label-sm text-label-sm text-outline hover:text-on-surface transition-colors" type="button">Debits</button>
+</div>
+<!-- Date Dropdown Placeholder -->
+<div class="relative">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-outline">calendar_today</span>
+<span>Last 30 Days</span>
+<span class="material-symbols-outlined text-[16px] text-outline">expand_more</span>
+</button>
+</div>
+<!-- Export Button -->
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors font-label-sm text-label-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Export CSV</span>
+</button>
+</div>
+</div>
+<!-- Ledger Data Table -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-outline font-label-sm text-label-sm uppercase tracking-wider sticky top-0 z-10">
+<th class="py-3 px-space-lg font-medium" scope="col">Date &amp; Time</th>
+<th class="py-3 px-space-md font-medium" scope="col">Reference</th>
+<th class="py-3 px-space-md font-medium" scope="col">Direction</th>
+<th class="py-3 px-space-md font-medium" scope="col">Counterparty Account</th>
+<th class="py-3 px-space-lg font-medium text-right" scope="col">Amount</th>
+<th class="py-3 px-space-lg font-medium text-right" scope="col">Currency</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 font-body-md text-body-md text-on-surface">
+<!-- Row 1: DEBIT -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low/70 transition-colors">
+<td class="py-3.5 px-space-lg whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">26 Oct 2026</span>
+<span class="font-body-sm text-body-sm text-outline">14:32 IST</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="font-data-mono text-data-mono text-outline font-semibold">REQ-8f3a</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-label-sm text-label-sm bg-error-container text-error font-medium">
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+                  DEBIT
+                </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[14px] text-outline">call_made</span>
+</div>
+<span class="text-on-surface">To: 1000••••7890 (Checking)</span>
+</div>
+</td>
+<td class="py-3.5 px-space-lg text-right whitespace-nowrap font-data-mono text-data-mono font-semibold text-error">
+                -₹5,000.00
+              </td>
+<td class="py-3.5 px-space-lg text-right whitespace-nowrap font-label-sm text-label-sm text-outline">
+                INR
+              </td>
+</tr>
+<!-- Row 2: CREDIT -->
+<tr class="bg-surface-container-low/40 hover:bg-surface-container-low/70 transition-colors">
+<td class="py-3.5 px-space-lg whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">25 Oct 2026</span>
+<span class="font-body-sm text-body-sm text-outline">09:15 IST</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="font-data-mono text-data-mono text-outline font-semibold">REQ-7c2b</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed-variant font-medium">
+<span class="material-symbols-outlined text-[14px]">call_received</span>
+                  CREDIT
+                </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-tertiary-fixed/40 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container">arrow_downward</span>
+</div>
+<span class="text-on-surface">From: 1000••••7890 (Checking)</span>
+</div>
+</td>
+<td class="py-3.5 px-space-lg text-right whitespace-nowrap font-data-mono text-data-mono font-semibold text-tertiary-container">
+                +₹10,000.00
+              </td>
+<td class="py-3.5 px-space-lg text-right whitespace-nowrap font-label-sm text-label-sm text-outline">
+                INR
+              </td>
+</tr>
+<!-- Row 3: DEBIT -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low/70 transition-colors">
+<td class="py-3.5 px-space-lg whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">22 Oct 2026</span>
+<span class="font-body-sm text-body-sm text-outline">18:40 IST</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="font-data-mono text-data-mono text-outline font-semibold">REQ-4a11</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-label-sm text-label-sm bg-error-container text-error font-medium">
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+                  DEBIT
+                </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[14px] text-outline">domain</span>
+</div>
+<span class="text-on-surface">To: External Vendor (MUM-892)</span>
+</div>
+</td>
+<td class="py-3.5 px-space-lg text-right whitespace-nowrap font-data-mono text-data-mono font-semibold text-error">
+                -₹1,200.00
+              </td>
+<td class="py-3.5 px-space-lg text-right whitespace-nowrap font-label-sm text-label-sm text-outline">
+                INR
+              </td>
+</tr>
+<!-- Row 4: CREDIT -->
+<tr class="bg-surface-container-low/40 hover:bg-surface-container-low/70 transition-colors">
+<td class="py-3.5 px-space-lg whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">18 Oct 2026</span>
+<span class="font-body-sm text-body-sm text-outline">11:05 IST</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="font-data-mono text-data-mono text-outline font-semibold">REQ-1d90</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed-variant font-medium">
+<span class="material-symbols-outlined text-[14px]">savings</span>
+                  CREDIT
+                </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-tertiary-fixed/40 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container">percent</span>
+</div>
+<span class="text-on-surface">Interest Accrual Q3</span>
+</div>
+</td>
+<td class="py-3.5 px-space-lg text-right whitespace-nowrap font-data-mono text-data-mono font-semibold text-tertiary-container">
+                +₹1,630.00
+              </td>
+<td class="py-3.5 px-space-lg text-right whitespace-nowrap font-label-sm text-label-sm text-outline">
+                INR
+              </td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination Footer -->
+<div class="px-space-lg py-space-md bg-surface-container-lowest flex flex-col sm:flex-row items-center justify-between gap-space-sm border-t-0">
+<span class="font-label-sm text-label-sm text-outline">
+          Showing <span class="font-medium text-on-surface">1</span> to <span class="font-medium text-on-surface">4</span> of <span class="font-medium text-on-surface">4</span> transactions
+        </span>
+<div class="flex items-center gap-space-sm">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-outline opacity-50 cursor-not-allowed font-label-sm text-label-sm flex items-center gap-1" disabled="" type="button">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+<span>Previous</span>
+</button>
+<span class="px-3 py-1 rounded-md bg-surface-container-low font-data-mono text-data-mono text-on-surface text-xs font-semibold">
+            Page 1 of 1
+          </span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-outline opacity-50 cursor-not-allowed font-label-sm text-label-sm flex items-center gap-1" disabled="" type="button">
+<span>Next</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Pre-styled Institutional Empty State Component (Hidden toggle ready for state managers) -->
+<div class="hidden bg-surface-container-lowest rounded-xl p-space-2xl text-center shadow-sm flex flex-col items-center justify-center" id="empty-state-preview">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-outline mb-space-md">
+<span class="material-symbols-outlined text-[32px]">receipt_long</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">No transactions for this account yet</h3>
+<p class="font-body-md text-body-md text-outline max-w-sm mt-space-xs">
+        Initiate a transfer or receive a deposit to see posted settlement records in your audit ledger.
+      </p>
+<a class="mt-space-lg inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">send_money</span>
+<span>Initiate a transfer</span>
+</a>
+</div>
+</div>
+</div>
+<script>
+  // Simple tab filter micro-interaction
+  document.querySelectorAll('#filter-tabs .filter-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('#filter-tabs .filter-btn').forEach(b => {
+        b.classList.remove('bg-surface-container-lowest', 'text-primary', 'font-semibold', 'shadow-xs');
+        b.classList.add('text-outline');
+      });
+      this.classList.add('bg-surface-container-lowest', 'text-primary', 'font-semibold', 'shadow-xs');
+      this.classList.remove('text-outline');
+    });
+  });
+</script></main></div></body></html>

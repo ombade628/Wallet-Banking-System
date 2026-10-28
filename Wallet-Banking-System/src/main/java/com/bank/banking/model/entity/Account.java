@@ -15,7 +15,7 @@ import org.hibernate.type.SqlTypes;
 public class Account {
 
 	@Id
-	@JdbcTypeCode(SqlTypes.CHAR) // <-- ADD THIS LINE
+	@JdbcTypeCode(SqlTypes.CHAR) 
 	@Column(columnDefinition = "CHAR(36)")
 	private UUID id = UUID.randomUUID();
 
@@ -40,12 +40,12 @@ public class Account {
 	@Column(nullable = false, length = 20)
 	private AccountStatus status = AccountStatus.PENDING;
 
-	@Version
-	private long version;
 
 	@Column(name = "created_at", nullable = false, updatable = false)
 	private Instant createdAt = Instant.now();
-
+	
+	public void setStatus(AccountStatus status) { this.status = status; }
+	
 	protected Account() {
 	}
 
@@ -129,22 +129,13 @@ public class Account {
 	public AccountStatus getStatus() {
 		return status;
 	}
-
-	public long getVersion() {
-		return version;
-	}
-
+ 
 	public Instant getCreatedAt() {
 		return createdAt;
 	}
 
 	public boolean isActive() {
 	    return status == AccountStatus.ACTIVE;
-	}
-
-	public void setBalance(BigDecimal subtract) {
-		// TODO Auto-generated method stub
-		
 	}
 
 }
