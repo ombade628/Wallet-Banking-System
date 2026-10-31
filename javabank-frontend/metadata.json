@@ -2,5 +2,5 @@
   "name": "JavaBank - Digital & Corporate Banking",
   "description": "Institutional digital banking platform with multi-role access for customer accounts, transfers, loan approvals, cashier deposits, and staff management.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE"]
 }
